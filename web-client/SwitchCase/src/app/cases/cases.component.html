@@ -1,6 +1,7 @@
 <div class="cases-container h-flex">
   <div *ngFor="let case of cases" class="cases-container__item h-flex">
-      <img src={{case.image}} alt="">
+      <a href="details"> <img src={{case.image}} alt=""> </a>
+     
       <h1>{{case.name}}</h1>
       <h1>{{case.price}}</h1>
   </div>

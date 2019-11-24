@@ -1,0 +1,10 @@
+<div class="case-title">Case content</div>
+<div class="case h-flex h-flex-wrap h-flex-justify-center">
+  <div class="case-image"></div>
+  <div class="case-button"></div>
+  <div *ngFor="let skin of skins" class="case__item h-flex">
+      <img src={{skin.image}} alt="">
+      <h3>{{skin.name}}</h3>
+      <h3>{{skin.weapon}}</h3>
+  </div>
+</div>
