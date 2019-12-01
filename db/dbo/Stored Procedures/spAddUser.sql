@@ -31,7 +31,7 @@ SET NOCOUNT ON
   BEGIN CATCH
     IF @@trancount > 0 ROLLBACK TRANSACTION;
     DECLARE @ProcName SYSNAME = object_name(@@procid)
-    EXEC log.spErrorLog @ErrorProc = @ProcName
+    EXEC loger.spErrorLog @ErrorProc = @ProcName
     ;THROW
   END CATCH
   
