@@ -1,25 +1,28 @@
 package com.artemglotov.switchcase.ui.caseDetails.viewModels
 
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.artemglotov.switchcase.core.models.Case
 import com.artemglotov.switchcase.core.models.Skin
+import com.artemglotov.switchcase.networking.NetworkService
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class CaseDetailsViewModel(
-    val case: Case
+    val case: Case,
+    private val networkService: NetworkService
 ) : ViewModel() {
-    val skins: MutableLiveData<List<Skin>> = MutableLiveData()
-
-    init {
-        fetchSkins()
+    val skins: LiveData<List<Skin>> = liveData {
+        val skins = networkService.getCaseSkins(case.caseId)
+        emit(skins)
     }
 
-    private fun fetchSkins() {
+    val droppedSkin: MutableLiveData<Skin> = MutableLiveData()
+
+    fun dropSkin() {
         viewModelScope.launch {
-            val fetchedSkins = listOf<Skin>()
-            skins.postValue(fetchedSkins)
+            val skin = networkService.dropSkin(case.caseId)
+            delay(3000)
+            droppedSkin.postValue(skin)
         }
     }
 }

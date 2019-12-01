@@ -35,13 +35,13 @@ class CaseListAdapter(val onCaseSelected: (case: Case) -> Unit) : RecyclerView.A
     }
 
     class CaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var name: TextView = itemView.text_name
+        var name: TextView = itemView.text_case_name
         var price: TextView = itemView.text_price
         var image: ImageView = itemView.image_case
 
         fun bindData(item: Case) {
             name.text = item.name
-            price.text = item.name
+            price.text = itemView.context.getString(R.string.case_price_template, item.price)
 
 //            Glide.with(image).load(item.imageLink).into(image)
         }

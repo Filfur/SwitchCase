@@ -22,5 +22,18 @@
         <argument
             android:name="selectedCase"
             app:argType="com.artemglotov.switchcase.core.models.Case" />
+        <action
+            android:id="@+id/action_skin"
+            app:destination="@id/destination_skin"
+            app:popUpTo="@+id/destination_case_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_skin"
+        android:name="com.artemglotov.switchcase.ui.skin.SkinFragment"
+        android:label="SkinFragment"
+        tools:layout="@layout/destination_skin">
+        <argument
+            android:name="skin"
+            app:argType="com.artemglotov.switchcase.core.models.Skin" />
     </fragment>
 </navigation>

@@ -36,7 +36,7 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/text_name"
+            android:id="@+id/text_case_name"
             style="@style/case_name_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

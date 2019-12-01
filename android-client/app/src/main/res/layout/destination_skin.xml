@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="150dp"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:padding="8dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,6 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:src="@drawable/scar"
         app:layout_constraintBottom_toTopOf="@+id/text_weapon_name"
@@ -33,7 +34,7 @@
 
     <TextView
         android:id="@+id/text_weapon_name"
-        style="@style/skin_item_weapon_name_style"
+        style="@style/skin_weapon_name_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SCAR-20"
@@ -43,10 +44,34 @@
 
     <TextView
         android:id="@+id/text_skin_name"
-        style="@style/skin_item_name_style"
+        style="@style/skin_name_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="Cardiac"
+        app:layout_constraintBottom_toTopOf="@+id/button_save_to_steam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        style="@style/button_style"
+        android:id="@+id/button_save_to_steam"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Send to steam"
+        app:layout_constraintBottom_toTopOf="@+id/button_sell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        style="@style/button_style"
+        android:id="@+id/button_sell"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Get money back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -1,28 +1,17 @@
 package com.artemglotov.switchcase.ui.caseList.viewModels
 
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.artemglotov.switchcase.core.models.Case
+import com.artemglotov.switchcase.networking.NetworkService
 import kotlinx.coroutines.launch
 
-class CaseListViewModel : ViewModel() {
-    val cases: MutableLiveData<List<Case>> = MutableLiveData()
+class CaseListViewModel(
+    private val networkService: NetworkService
+) : ViewModel() {
 
-    val selectedCase: MutableLiveData<Case> = MutableLiveData()
-
-    init {
-        fetchCases()
+    val cases: LiveData<List<Case>> = liveData {
+        val cases = networkService.getCases()
+        emit(cases)
     }
 
-    private fun fetchCases() {
-        viewModelScope.launch {
-            val fetchedCases = listOf<Case>()
-            cases.postValue(fetchedCases)
-        }
-    }
-
-    fun selectCase(case: Case) {
-        selectedCase.postValue(case)
-    }
 }
