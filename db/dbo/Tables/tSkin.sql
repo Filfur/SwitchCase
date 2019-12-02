@@ -7,6 +7,7 @@ CREATE TABLE tSkin
   [Price]              MONEY              NULL,
   [DropRate]           FLOAT(4)           NULL,
   [Rarity]             NVARCHAR(255)      NULL,
+  [RarityID]           INT                NULL,
   [WeaponID]           INT                NULL,
   [CaseID]             INT                NULL
 
