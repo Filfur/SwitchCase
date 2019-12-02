@@ -13,10 +13,9 @@ SET NOCOUNT ON
     s.Price,
     s.DropRate,
     s.Rarity,
-    s.WeaponID,
+    s.WeaponID
   FROM tSkin s WHERE CaseID = @inCaseID
 
   RETURN 0;
-GO
-GRANT EXEC ON spGetCaseSkinList TO AppRole
+END;
 GO
