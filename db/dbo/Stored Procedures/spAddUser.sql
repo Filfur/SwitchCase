@@ -28,13 +28,14 @@ SET NOCOUNT ON
 
     COMMIT TRANSACTION
 
+  END TRY
   BEGIN CATCH
     IF @@trancount > 0 ROLLBACK TRANSACTION;
     DECLARE @ProcName SYSNAME = object_name(@@procid)
-    EXEC loger.spErrorLog @ErrorProc = @ProcName
+    EXEC spErrorLog @ErrorProc = @ProcName
     ;THROW
   END CATCH
-  
-GO
-GRANT EXEC ON spAddUser TO AppRole
+
+  RETURN 0;
+END  
 GO
