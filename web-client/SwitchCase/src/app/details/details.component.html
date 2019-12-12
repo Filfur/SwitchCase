@@ -1,10 +1,28 @@
 <div class="case-title">Case content</div>
-<div class="case h-flex h-flex-wrap h-flex-justify-center">
-  <div class="case-image"></div>
-  <div class="case-button"></div>
-  <div *ngFor="let skin of skins" class="case__item h-flex">
+<div class="case h-flex h-flex-wrap h-flex-justify-center h-flex-col-dir">
+  <div class="case-image h-flex h-flex-col-dir h-flex-align-center">
+    <h3>{{case.name}}</h3>
+    <img src={{case.image}} alt="">
+  </div>
+  <div class="carousel-wrapper h-dispaly--hide">
+    <div class="arrow"></div>
+    <div class="skins-window">
+        <ul class="skins-list">
+            <li *ngFor="let skin of skins">
+                <img src={{skin.image}} alt="">
+            </li>
+        </ul>
+    </div>
+
+  </div>
+  <div class="case-button h-flex h-flex-justify-center">
+    <button class="button">Open</button>
+  </div>
+  <div class="case-skins h-flex h-flex-wrap h-flex-justify-center">
+    <div *ngFor="let skin of skins" class="case__item h-flex">
       <img src={{skin.image}} alt="">
       <h3>{{skin.name}}</h3>
       <h3>{{skin.weapon}}</h3>
+    </div>
   </div>
 </div>

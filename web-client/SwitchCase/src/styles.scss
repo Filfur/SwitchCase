@@ -8,13 +8,21 @@ body {
 .h-flex {
   display: flex;
 }
-
+.h-dispaly--hide {
+  display: none
+}
+.h-flex-col-dir {
+  flex-direction: column;
+}
 .h-flex-wrap {
   flex-wrap: wrap;
 }
 
 .h-flex-justify-center {
   justify-content: center
+}
+.h-flex-align-center {
+  align-items: center;
 }
 
 .h-flex-justify-between {
