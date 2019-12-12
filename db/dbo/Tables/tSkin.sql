@@ -7,6 +7,7 @@ CREATE TABLE tSkin
   [Price]              MONEY              NULL,
   [DropRate]           FLOAT(4)           NULL,
   [Rarity]             NVARCHAR(255)      NULL,
+  [RarityID]           INT                NULL,
   [WeaponID]           INT                NULL,
   [CaseID]             INT                NULL
 
@@ -19,4 +20,7 @@ ADD CONSTRAINT [FK_tSkin_tWeapon] FOREIGN KEY([WeaponID]) REFERENCES [tWeapon](W
 GO
 ALTER TABLE tSkin
 ADD CONSTRAINT [FK_tSkin_tCase] FOREIGN KEY([CaseID]) REFERENCES [tCase](CaseID)
+GO
+ALTER TABLE tSkin
+ADD CONSTRAINT [FK_tSkin_tRarity] FOREIGN KEY([RarityID]) REFERENCES [tRarity](RarityID)
 GO
