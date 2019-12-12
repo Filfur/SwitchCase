@@ -5,5 +5,6 @@ data class User(
     val email: String,
     val password: String,
     val name: String,
+    val steamLink: String,
     val balance: Float
 )

@@ -17,6 +17,8 @@ class AndroidPreferences(context: Context) {
         private const val EMAIL = "email"
         private const val PASSWORD = "password"
         private const val STEAM_LINK = "steam_link"
+        private const val BALANCE = "balance"
+        private const val IS_SIGNED_IN = "is_signed_in"
     }
 
     private val preferences: SharedPreferences =
@@ -38,4 +40,11 @@ class AndroidPreferences(context: Context) {
         get() = preferences.getString(STEAM_LINK, "") ?: ""
         set(value) = preferences.edit { putString(STEAM_LINK, value) }
 
+    var balance: Float
+        get() = preferences.getFloat(BALANCE, 0f)
+        set(value) = preferences.edit { putFloat(BALANCE, value) }
+
+    var isSignedIn: Boolean
+        get() = preferences.getBoolean(IS_SIGNED_IN, false)
+        set(value) = preferences.edit { putBoolean(IS_SIGNED_IN, value) }
 }

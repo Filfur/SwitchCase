@@ -4,10 +4,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.artemglotov.switchcase.networking.NetworkService
+import com.artemglotov.switchcase.preferences.AndroidPreferences
 import kotlinx.coroutines.launch
 
 class UserViewModel(
-        private val networkService: NetworkService
+        private val networkService: NetworkService,
+        private val preferences: AndroidPreferences
 ) : ViewModel() {
     val balance: MutableLiveData<Float> = MutableLiveData()
 
@@ -15,9 +17,15 @@ class UserViewModel(
         updateUserInfo()
     }
 
+    var isSignedIn: Boolean
+        get() = preferences.isSignedIn
+        set(value) {
+            preferences.isSignedIn = value
+        }
+
     fun updateUserInfo() {
         viewModelScope.launch {
-            val userInfo = networkService.getUserInfo(1)!!
+            val userInfo = networkService.getUserInfo(1)
             balance.postValue(userInfo.balance)
         }
     }

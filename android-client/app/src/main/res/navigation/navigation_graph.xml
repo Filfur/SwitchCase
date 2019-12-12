@@ -64,4 +64,16 @@
             app:destination="@id/destination_case_list"
             app:popUpTo="@+id/navigation_graph" />
     </fragment>
+    <fragment
+        android:id="@+id/destination_profile"
+        android:name="com.artemglotov.switchcase.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/destination_profile">
+        <action
+            android:id="@+id/action_sign_in"
+            app:destination="@id/destination_sign_in"
+            app:popUpTo="@+id/destination_case_list"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action android:id="@+id/action_global_profileFragment" app:destination="@id/destination_profile" />
 </navigation>

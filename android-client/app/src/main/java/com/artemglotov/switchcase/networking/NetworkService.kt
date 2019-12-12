@@ -36,6 +36,15 @@ class NetworkService(
         preferences.password = password
         preferences.steamLink = steamLink
         preferences.username = username
+        preferences.balance = 1000f
+        return true
+    }
+
+    suspend fun saveProfile(email: String, password: String, username: String, steamLink: String): Boolean {
+        preferences.email = email
+        preferences.password = password
+        preferences.steamLink = steamLink
+        preferences.username = username
         return true
     }
 
@@ -97,15 +106,15 @@ class NetworkService(
         }
     }
 
-    suspend fun getUserInfo(userId: Int): User? {
-        return User(1, "pidor@mail.ru", "yapidor", "Zinya", 1000f)
+    fun getUserInfo(userId: Int): User {
+        return User(1, preferences.email, preferences.password, preferences.username, preferences.steamLink, preferences.balance)
 
-        val response = service.getUserInfo(userId)
-        val userInfo = response.body()
-        return if (response.isSuccessful && userInfo != null) {
-            userInfo
-        } else {
-            null
-        }
+//        val response = service.getUserInfo(userId)
+//        val userInfo = response.body()
+//        return if (response.isSuccessful && userInfo != null) {
+//            userInfo
+//        } else {
+//            null
+//        }
     }
 }

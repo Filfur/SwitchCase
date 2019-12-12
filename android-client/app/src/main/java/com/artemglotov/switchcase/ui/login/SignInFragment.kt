@@ -9,19 +9,30 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.artemglotov.switchcase.R
+import com.artemglotov.switchcase.ui.UserViewModel
 import com.artemglotov.switchcase.ui.login.viewModels.LoginViewModel
 import com.artemglotov.switchcase.ui.utils.hideKeyboard
 import kotlinx.android.synthetic.main.destination_sign_in.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import org.koin.android.viewmodel.ext.android.sharedViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class SignInFragment : Fragment() {
 
     private val viewModel: LoginViewModel by viewModel()
 
+    private val userViewModel: UserViewModel by sharedViewModel()
+
     private val navController: NavController by lazy {
         findNavController()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (userViewModel.isSignedIn) {
+            navController.navigate(SignInFragmentDirections.actionCaseList())
+        }
     }
 
     override fun onCreateView(
@@ -46,6 +57,8 @@ class SignInFragment : Fragment() {
                     val isSuccess = viewModel.signIn(email.toString(), password.toString())
 
                     if (isSuccess) {
+                        userViewModel.updateUserInfo()
+                        userViewModel.isSignedIn = true
                         navController.navigate(SignInFragmentDirections.actionCaseList())
                     }
                 }

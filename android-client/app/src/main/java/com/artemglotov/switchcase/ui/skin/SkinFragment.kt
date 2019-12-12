@@ -12,6 +12,7 @@ import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.ui.UserViewModel
 import com.artemglotov.switchcase.ui.skin.viewModels.SkinViewModel
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.destination_skin.*
 import org.koin.android.viewmodel.ext.android.sharedViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -52,12 +53,14 @@ class SkinFragment : Fragment() {
 
         button_save_to_steam.setOnClickListener {
             viewModel.sendToSteam()
+            Snackbar.make(view, "Your skin saved into STEAM", Snackbar.LENGTH_LONG).show()
             navController.popBackStack()
         }
 
         button_sell.setOnClickListener {
             val price = viewModel.getMoneyBack()
             userViewModel.increaseBalance(price)
+            Snackbar.make(view, "Your skin was sold for ${"$"}${price}", Snackbar.LENGTH_LONG).show()
             navController.popBackStack()
         }
     }
