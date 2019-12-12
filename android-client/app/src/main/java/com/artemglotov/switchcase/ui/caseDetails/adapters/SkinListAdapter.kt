@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.core.models.Skin
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_skin_list_item.view.*
 
 class SkinListAdapter() : RecyclerView.Adapter<SkinListAdapter.SkinViewHolder>() {
@@ -38,9 +39,9 @@ class SkinListAdapter() : RecyclerView.Adapter<SkinListAdapter.SkinViewHolder>()
 
         fun bindData(item: Skin) {
             weaponName.text = item.weaponName
-            skinName.text = item.skinName
+            skinName.text = item.name
 
-//            Glide.with(image).load(item.imageLink).into(image)
+            Glide.with(image).load(item.imageLink).into(image)
         }
     }
 }

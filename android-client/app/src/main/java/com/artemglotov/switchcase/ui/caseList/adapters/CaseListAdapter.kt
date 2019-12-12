@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.core.models.Case
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_case_list_item.view.*
 
 class CaseListAdapter(val onCaseSelected: (case: Case) -> Unit) : RecyclerView.Adapter<CaseListAdapter.CaseViewHolder>() {
@@ -35,15 +36,15 @@ class CaseListAdapter(val onCaseSelected: (case: Case) -> Unit) : RecyclerView.A
     }
 
     class CaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var name: TextView = itemView.text_name
+        var name: TextView = itemView.text_case_name
         var price: TextView = itemView.text_price
         var image: ImageView = itemView.image_case
 
         fun bindData(item: Case) {
             name.text = item.name
-            price.text = item.name
+            price.text = itemView.context.getString(R.string.case_price_template, item.price.toString())
 
-//            Glide.with(image).load(item.imageLink).into(image)
+            Glide.with(image).load(item.imageLink).into(image)
         }
     }
 }

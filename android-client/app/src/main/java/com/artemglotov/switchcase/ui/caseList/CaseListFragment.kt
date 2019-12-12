@@ -6,7 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.core.models.Case
 import com.artemglotov.switchcase.ui.caseList.adapters.CaseListAdapter
@@ -18,8 +19,12 @@ class CaseListFragment : Fragment() {
 
     private val viewModel: CaseListViewModel by viewModel()
 
+    private val navController: NavController by lazy {
+        findNavController()
+    }
+
     private val adapter: CaseListAdapter = CaseListAdapter { case ->
-        viewModel.selectCase(case)
+        navController.navigate(CaseListFragmentDirections.actionCaseDetails(case))
     }
 
     private val casesObserver = Observer<List<Case>> { cases ->

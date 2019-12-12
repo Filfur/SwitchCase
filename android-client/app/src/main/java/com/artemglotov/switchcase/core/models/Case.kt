@@ -7,6 +7,6 @@ import kotlinx.android.parcel.Parcelize
 data class Case(
     val caseId: Int,
     val name: String,
-    val price: Long,
+    val price: Float,
     val imageLink: String
 ) : Parcelable
