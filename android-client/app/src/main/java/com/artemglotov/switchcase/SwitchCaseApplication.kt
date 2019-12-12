@@ -10,6 +10,7 @@ import com.artemglotov.switchcase.ui.UserViewModel
 import com.artemglotov.switchcase.ui.caseDetails.viewModels.CaseDetailsViewModel
 import com.artemglotov.switchcase.ui.caseList.viewModels.CaseListViewModel
 import com.artemglotov.switchcase.ui.login.viewModels.LoginViewModel
+import com.artemglotov.switchcase.ui.profile.viewModels.ProfileViewModel
 import com.artemglotov.switchcase.ui.skin.viewModels.SkinViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -24,10 +25,11 @@ class SwitchCaseApplication : Application() {
         single { NetworkService(get(), get()) }
 
         viewModel { CaseListViewModel(get()) }
-        viewModel { UserViewModel(get()) }
+        viewModel { UserViewModel(get(), get()) }
         viewModel { (case: Case) -> CaseDetailsViewModel(case, get()) }
         viewModel { (skin: Skin) -> SkinViewModel(skin, get()) }
         viewModel { LoginViewModel(get()) }
+        viewModel { ProfileViewModel(get()) }
     }
 
     override fun onCreate() {

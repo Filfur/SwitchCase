@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:minHeight="?attr/actionBarSize"
+        app:menu="@menu/profile_menu"
         android:theme="?attr/actionBarTheme">
 
         <TextView
@@ -23,8 +24,7 @@
 
         <TextView
             style="@style/toolbar_balance_style"
-            android:layout_gravity="end"
-            android:layout_marginEnd="16dp"
+            android:layout_gravity="start"
             android:id="@+id/text_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

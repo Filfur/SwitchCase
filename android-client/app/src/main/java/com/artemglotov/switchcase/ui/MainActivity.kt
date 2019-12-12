@@ -2,8 +2,12 @@ package com.artemglotov.switchcase.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import androidx.activity.addCallback
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
+import androidx.navigation.ui.onNavDestinationSelected
 import com.artemglotov.switchcase.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -25,6 +29,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        onBackPressedDispatcher.addCallback(this) {
+            navController.popBackStack() || super.onSupportNavigateUp() || run {
+                finish()
+                true
+            }
+        }
+
         supportActionBar?.apply {
             setDisplayShowTitleEnabled(false)
         }
@@ -38,5 +49,18 @@ class MainActivity : AppCompatActivity() {
                 supportActionBar?.show()
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.profile_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean =
+        item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

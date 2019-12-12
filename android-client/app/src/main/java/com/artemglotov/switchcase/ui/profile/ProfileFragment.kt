@@ -1,4 +1,4 @@
-package com.artemglotov.switchcase.ui.login
+package com.artemglotov.switchcase.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,17 +10,17 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.ui.UserViewModel
-import com.artemglotov.switchcase.ui.login.viewModels.LoginViewModel
+import com.artemglotov.switchcase.ui.profile.viewModels.ProfileViewModel
 import com.artemglotov.switchcase.ui.utils.hideKeyboard
-import kotlinx.android.synthetic.main.destination_sign_up.*
+import kotlinx.android.synthetic.main.destination_profile.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.koin.android.viewmodel.ext.android.sharedViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class SignUpFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    private val viewModel: LoginViewModel by viewModel()
+    private val viewModel: ProfileViewModel by viewModel()
 
     private val userViewModel: UserViewModel by sharedViewModel()
 
@@ -28,24 +28,24 @@ class SignUpFragment : Fragment() {
         findNavController()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        if (userViewModel.isSignedIn) {
-            navController.navigate(SignInFragmentDirections.actionCaseList())
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.destination_sign_up, container, false)
+    ): View? = inflater.inflate(R.layout.destination_profile, container, false)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        button_login.setOnClickListener {
+        viewModel.user.apply {
+            text_username.setText(name)
+            text_password.setText(password)
+            text_steam_link.setText(steamLink)
+            text_email.setText(email)
+        }
+
+        button_save.setOnClickListener {
             hideKeyboard()
 
             val email = text_email.text
@@ -57,23 +57,26 @@ class SignUpFragment : Fragment() {
                 delay(2000)
 
                 if (!email.isNullOrEmpty() && !password.isNullOrEmpty() && !steamLink.isNullOrEmpty() && !username.isNullOrEmpty()) {
-                    val isSuccess = viewModel.signUp(
+                    val isSuccess = viewModel.saveProfile(
                         email.toString(),
                         password.toString(),
                         username.toString(),
                         steamLink.toString()
                     )
                     if (isSuccess) {
-                        userViewModel.updateUserInfo()
-                        userViewModel.isSignedIn = true
-                        navController.navigate(SignUpFragmentDirections.actionCaseList())
+                        navController.popBackStack()
                     }
                 }
             }
         }
 
-        text_to_sign_in.setOnClickListener {
-            navController.navigate(SignUpFragmentDirections.actionSignIn())
+        button_sign_out.setOnClickListener {
+            hideKeyboard()
+
+            lifecycleScope.launch {
+                userViewModel.isSignedIn = false
+                navController.navigate(ProfileFragmentDirections.actionSignIn())
+            }
         }
     }
 
