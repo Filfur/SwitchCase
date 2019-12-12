@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 class UserViewModel(
         private val networkService: NetworkService
 ) : ViewModel() {
-    val balance: MutableLiveData<Int> = MutableLiveData()
+    val balance: MutableLiveData<Float> = MutableLiveData()
 
     init {
         updateUserInfo()
@@ -22,11 +22,13 @@ class UserViewModel(
         }
     }
 
-    fun increaseBalance(count: Int) {
-        balance.postValue((balance.value ?: 0) + count)
+    fun increaseBalance(count: Float) {
+        val newBalance = (((balance.value ?: 0f) + count) * 100).toInt().toFloat() / 100
+        balance.postValue(newBalance)
     }
 
-    fun decreaseBalance(count: Int) {
-        balance.postValue((balance.value ?: 0) - count)
+    fun decreaseBalance(count: Float) {
+        val newBalance = (((balance.value ?: 0f) - count) * 100).toInt().toFloat() / 100
+        balance.postValue(newBalance)
     }
 }

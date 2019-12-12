@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Switch Case</string>
 
-    <string name="case_price_template">$%1$d</string>
+    <string name="case_price_template">$%1$s</string>
+    <string name="login_dont_have_account"><u>Don\'t have an account yet?</u></string>
+    <string name="login_have_account"><u>Already have an account?</u></string>
+    <string name="button_drop">Drop ($%1$s)</string>
+    <string name="get_money_back">Get money back ($%1$s)</string>
 </resources>

@@ -17,6 +17,7 @@ import com.artemglotov.switchcase.core.models.Skin
 import com.artemglotov.switchcase.ui.UserViewModel
 import com.artemglotov.switchcase.ui.caseDetails.adapters.SkinListAdapter
 import com.artemglotov.switchcase.ui.caseDetails.viewModels.CaseDetailsViewModel
+import com.bumptech.glide.Glide
 import com.gtomato.android.ui.transformer.LinearViewTransformer
 import com.gtomato.android.ui.widget.CarouselView
 import kotlinx.android.synthetic.main.destination_case_details.*
@@ -62,6 +63,12 @@ class CaseDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewModel.case.apply {
+            Glide.with(this@CaseDetailsFragment).load(imageLink).into(image_case)
+            text_case_name.text = name
+            button_drop.text = getString(R.string.button_drop, price.toString())
+        }
+
         list_skin.apply {
             adapter = this@CaseDetailsFragment.adapter
             transformer = LinearViewTransformer()
@@ -92,7 +99,7 @@ class CaseDetailsFragment : Fragment() {
                     duration = 1000
                 }.start()
 
-                userViewModel.decreaseBalance(args.selectedCase.price.toInt())
+                userViewModel.decreaseBalance(args.selectedCase.price)
                 image_arrow.animate().apply {
                     duration = 1000
                     alpha(1f)

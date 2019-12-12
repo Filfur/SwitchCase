@@ -1,0 +1,537 @@
+[
+  {
+    "CaseId": 1,
+    "Name": "Chroma 3",
+    "ImageLink": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFYynaSdJGhE74y0wNWIw_OlNuvXkDpSuZQmi--SrN-h3gey-Uo6YWmlIoCLMlhplhFFvwI/256fx256f",
+    "Price": 0.99,
+    "Items": [
+      {
+        "SkinId": 1,
+        "CaseId": 1,
+        "Name": "Chantico's Fire",
+        "WeaponName": "M4A1-S",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_soultaker_light_large.4939d69bd691d421ca9c7d6558b46088c8ac5317.png",
+        "Price": 10.60,
+        "Rarity": "Covert",
+        "DropRate": 0.0025
+      },
+      {
+        "SkinId": 2,
+        "CaseId": 1,
+        "Name": "Judgement of Anubis",
+        "WeaponName": "PP-Bizon",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_curse_light_large.c19cf584d3e28db4914d1559cd387999457944d8.png",
+        "Price": 4.37,
+        "Rarity": "Covert",
+        "DropRate": 0.0025
+      },
+      {
+        "SkinId": 3,
+        "CaseId": 1,
+        "Name": "Asiimov",
+        "WeaponName": "P250",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_asiimov_light_large.7ccf465f7dc55d2d960465d404c10cbc8c442cee.png",
+        "Price": 3.05,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 4,
+        "CaseId": 1,
+        "Name": "Fleet Flock",
+        "WeaponName": "AUG",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_swallows_light_large.29e48baa4086b20e4a5f714b5f8cc6350de7c758.png",
+        "Price": 1.85,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 5,
+        "CaseId": 1,
+        "Name": "Primal Saber",
+        "WeaponName": "UMP-45",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_primalsaber_light_large.67bef91a43734d654516f65c4288711b257d2049.png",
+        "Price": 2.22,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 6,
+        "CaseId": 1,
+        "Name": "Ghost Crusader",
+        "WeaponName": "SSG 08",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_gs_ssg08_armacore_light_large.043342869c64e1a08107055a4e1b332ad9c763c0.png",
+        "Price": 0.76,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 7,
+        "CaseId": 1,
+        "Name": "Black Tie",
+        "WeaponName": "XM1014",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_spectrum_light_large.6318ee51c405fb5e8a40aedfc3d98d530f789a5b.png",
+        "Price": 0.36,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 8,
+        "CaseId": 1,
+        "Name": "Red Astor",
+        "WeaponName": "CZ75-Auto",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_gs_cz75a_redastor_light_large.e00e688986c50877a103fe66d70fdf1fc13bbe8b.png",
+        "Price": 0.34,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 9,
+        "CaseId": 1,
+        "Name": "Firefight",
+        "WeaponName": "Galil AR",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_gs_galilar_incenerator_light_large.669901b842361b46108ced0a555f5575839d093e.png",
+        "Price": 0.43,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 10,
+        "CaseId": 1,
+        "Name": "Re-Entry",
+        "WeaponName": "Tec-9",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_am_tec9_redblast_light_large.0f8de75737cc35ac1d14cf74924838da4d7ab849.png",
+        "Price": 0.34,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 11,
+        "CaseId": 1,
+        "Name": "Atlas",
+        "WeaponName": "SG 553",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_atlas_light_large.536218f8160485fa927e19fa06fedae43d9c04e6.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 12,
+        "CaseId": 1,
+        "Name": "Bioleak",
+        "WeaponName": "MP9",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_am_mp9_bioleak_light_large.d9b0d0e9fea2104871e0510bd704bfa03cdd6056.png",
+        "Price": 0.14,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 13,
+        "CaseId": 1,
+        "Name": "Oceanic",
+        "WeaponName": "P2000",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_hy_p2000_oceani_light_large.8f64654c5964975c85201b1dbbdf7b8ffab768be.png",
+        "Price": 0.10,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 14,
+        "CaseId": 1,
+        "Name": "Spectre",
+        "WeaponName": "M249",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_spectre_light_large.b0a23c44e56390b4bbdc2c389911f6cc2b42da3d.png",
+        "Price": 0.11,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 15,
+        "CaseId": 1,
+        "Name": "Ventilators",
+        "WeaponName": "Dual Berettas",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_gs_dualberettas_ventilators_light_large.45cb1ffd25de1ed5b90ba104b1f8e0a8eb2eb255.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 16,
+        "CaseId": 1,
+        "Name": "Orange Crash",
+        "WeaponName": "G3SG1",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_sp_g3sg1_militiaorange_light_large.215d54d5c86185e61d65694899bf029f6e070cab.png",
+        "Price": 0.10,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 17,
+        "CaseId": 1,
+        "Name": "Fubar",
+        "WeaponName": "Sawed-Off",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_gs_sawedoff_fubar_light_large.0673d87171fccc0fc98e77806da7259e283283ea.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      }
+    ]
+  },
+  {
+    "CaseId": 2,
+    "Name": "Clutch",
+    "ImageLink": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFY5naqQIz4R7Yjix9bZkvKiZrmAzzlTu5AoibiT8d_x21Wy8hY_MWz1doSLMlhpM3FKbNs/256fx256f",
+    "Price": 0.99,
+    "Items": [
+      {
+        "SkinId": 18,
+        "CaseId": 2,
+        "Name": "Neo-Noir",
+        "WeaponName": "M4A4",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_neo_noir_light_large.b03bd6902c1d714af0bd4795dce8e653dd12dcc9.png",
+        "Price": 12.91,
+        "Rarity": "Covert",
+        "DropRate": 0.0025
+      },
+      {
+        "SkinId": 19,
+        "CaseId": 2,
+        "Name": "Bloodsport",
+        "WeaponName": "MP7",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_mp7_bloodsport_light_large.ab5c304901ceb320482742b041815e7b5e3ccb95.png",
+        "Price": 3.10,
+        "Rarity": "Covert",
+        "DropRate": 0.0025
+      },
+      {
+        "SkinId": 20,
+        "CaseId": 2,
+        "Name": "Cortex",
+        "WeaponName": "USP-S",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_cu_usp_cut_light_large.573fc8c594667e378f3ed9890ce48bbb586e8de0.png",
+        "Price": 4.39,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 21,
+        "CaseId": 2,
+        "Name": "Mortis",
+        "WeaponName": "AWP",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_death_light_large.19bdee04e6a0b4a3b8f832fd8ea18fea1e558f2e.png",
+        "Price": 3.76,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 22,
+        "CaseId": 2,
+        "Name": "Stymphalian",
+        "WeaponName": "AUG",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_gs_aug_stymphalian_birds_light_large.0840c45db138a07275c2250a0881fe752f27c601.png",
+        "Price": 1.76,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 23,
+        "CaseId": 2,
+        "Name": "Moonrise",
+        "WeaponName": "Glock-18",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_aa_glock_18_urban_moon_fever_light_large.a0227f81e44dba68abbe595d427d62f9f90da99d.png",
+        "Price": 0.41,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 24,
+        "CaseId": 2,
+        "Name": "Arctic Wolf",
+        "WeaponName": "UMP-45",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump45_white_fang_light_large.f63a10d5ee18e3045adfdcf963b9067b3b0a6b48.png",
+        "Price": 0.39,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 25,
+        "CaseId": 2,
+        "Name": "SWAG-7",
+        "WeaponName": "MAG-7",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_aq_mag7_swag7_light_large.20341e396db88a5ecde84f8b803a500f4aec3b55.png",
+        "Price": 0.34,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 26,
+        "CaseId": 2,
+        "Name": "Wild Six",
+        "WeaponName": "Nova",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_gs_nova_anchorite_light_large.419b869b5316b67a6ed673edafd088a9d16c066c.png",
+        "Price": 0.37,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 27,
+        "CaseId": 2,
+        "Name": "Lionfish",
+        "WeaponName": "Negev",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_sp_negev_lionfish_light_large.f8326a67617c5138ab8b6f6afc81375fbd091033.png",
+        "Price": 0.40,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 28,
+        "CaseId": 2,
+        "Name": "Aloha",
+        "WeaponName": "SG 553",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_sp_sg533_aloha_light_large.03aa863680ab2223924ae9cbe8b7662a84fb162c.png",
+        "Price": 0.10,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 29,
+        "CaseId": 2,
+        "Name": "Grip",
+        "WeaponName": "R8 Revolver",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_revolver_tread_light_large.7c3bd1302f62853e5694aec2d70cf1c7140b3fc0.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 30,
+        "CaseId": 2,
+        "Name": "Flame Test",
+        "WeaponName": "Five-SeveN",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_fiveseven_gs_fiveseven_hot_rod_violet_light_large.66cb3d6336f4ea07a7f4ebbd3192c59f0afca3fc.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 31,
+        "CaseId": 2,
+        "Name": "Urban Hazard",
+        "WeaponName": "P2000",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_urban_hazard_light_large.17657c4e9c3379f634c78e4d02ca9e9facbe9edb.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 32,
+        "CaseId": 2,
+        "Name": "Black Sand",
+        "WeaponName": "MP9",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_black_sand_light_large.37dce08f403ec73c1e16b3dc46068b22293e9514.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 33,
+        "CaseId": 2,
+        "Name": "Night Riot",
+        "WeaponName": "PP-Bizon",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_riot_light_large.2f0848b27a917287062306f49870cf9ec06bbbbe.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 34,
+        "CaseId": 2,
+        "Name": "Oxide Blaze",
+        "WeaponName": "XM1014",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_oxide_blaze_light_large.691be80b706e1ea4faf9b5c9bec40b3611b1d440.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      }
+    ]
+
+  },
+  {
+    "CaseId": 3,
+    "Name": "Horizon",
+    "ImageLink": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQNqhpOSV-fRPasw8rsUFJ5KBFZv668FFUwnfbOdDgavYXukYTZkqf2ZbrTwmkE6scgj7CY94ml3FXl-ENkMW3wctOLMlhpVHKV9YA/256fx256f",
+    "Price": 0.99,
+    "Items": [
+      {
+        "SkinId": 35,
+        "CaseId": 3,
+        "Name": "Neon Rider",
+        "WeaponName": "AK-47",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_neon_rider_light_large.9209192b514c4ec98146b4747dec8ce407a977c8.png",
+        "Price": 21.58,
+        "Rarity": "Covert",
+        "DropRate": 0.0025
+      },
+      {
+        "SkinId": 36,
+        "CaseId": 3,
+        "Name": "Code Red",
+        "WeaponName": "Desert Eagle",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_gs_deagle_aggressor_light_large.51ffb87f03ae0d3c467d4412f3c246067748e61d.png",
+        "Price": 13.83,
+        "Rarity": "Covert",
+        "DropRate": 0.0025
+      },
+      {
+        "SkinId": 37,
+        "CaseId": 3,
+        "Name": "Nightmare",
+        "WeaponName": "M4A1-S",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_nightmare_light_large.68e892eb4dedad809205a5fd06f175297d1be1cb.png",
+        "Price": 3.05,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 38,
+        "CaseId": 3,
+        "Name": "Devourer",
+        "WeaponName": "Sawed-Off",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sawedoff_cu_sawedoff_devourer_light_large.d8365e13320f20eb532a2d5109e1fc35562bc376.png",
+        "Price": 2.33,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 39,
+        "CaseId": 3,
+        "Name": "Eye of Athena",
+        "WeaponName": "FAMAS",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_owl_orange_light_large.7cb3a86d36317530964f40d66b755789de7ca88a.png",
+        "Price": 2.47,
+        "Rarity": "Classified",
+        "DropRate": 0.015
+      },
+      {
+        "SkinId": 40,
+        "CaseId": 3,
+        "Name": "PAW",
+        "WeaponName": "AWP",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_am_awp_pawpaw_light_large.0ff115c31307cc3122536c44a9aef7e64277dc19.png",
+        "Price": 1.88,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 41,
+        "CaseId": 3,
+        "Name": "Eco",
+        "WeaponName": "CZ75-Auto",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_cz75a_cu_cz75_eco_light_large.19aa7b914ac71968e73ac48b112b9f4c8116c767.png",
+        "Price": 0.36,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 42,
+        "CaseId": 3,
+        "Name": "Powercore",
+        "WeaponName": "MP7",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_powercore_mp7_light_large.cff12134204aef1ddc67e142088a2b7cec911960.png",
+        "Price": 0.34,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 43,
+        "CaseId": 4,
+        "Name": "High Seas",
+        "WeaponName": "G3SG1",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_g3sg1_gs_g3sg1_buccaneer_light_large.68c69e9856fd43f17a4165d1f27116496657fd00.png",
+        "Price": 0.43,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 44,
+        "CaseId": 3,
+        "Name": "Toy Soldier",
+        "WeaponName": "Nova",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_toy_soldier_light_large.e35320d18405b77fb9dd5e495fe4f625b8ab6c82.png",
+        "Price": 0.34,
+        "Rarity": "Restricted",
+        "DropRate": 0.05
+      },
+      {
+        "SkinId": 45,
+        "CaseId": 3,
+        "Name": "Warhawk",
+        "WeaponName": "Glock-18",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_gs_glock_thunder_dust_light_large.0e26afdd95bac17ce01c6e097ca0b97db3cffee4.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 46,
+        "CaseId": 3,
+        "Name": "Traction",
+        "WeaponName": "P90",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_tread_light_large.0acb87de3db60e1c07aa159fd5b8238b11bb8f8f.png",
+        "Price": 0.14,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 47,
+        "CaseId": 3,
+        "Name": "Amber Slipstream",
+        "WeaponName": "AUG",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_aug_torn_orange_light_large.53b51a022d38ea39eff5ffbed92551dc741e17c3.png",
+        "Price": 0.10,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 48,
+        "CaseId": 3,
+        "Name": "Capillary",
+        "WeaponName": "MP9",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_vein_light_large.d0189b21fba4603ff88d407d6af0e63093f22ba7.png",
+        "Price": 0.11,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 49,
+        "CaseId": 3,
+        "Name": "Snek-9",
+        "WeaponName": "Tec-9",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_snake_light_large.9065015e55daa4190b97a8bc033925ed0aeb1abd.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 50,
+        "CaseId": 3,
+        "Name": "Survivalist",
+        "WeaponName": "R8 Revolver",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_cu_r8_survivalist_light_large.cda482f11a63c89c574211b8d5ea9a60703e3cd2.png",
+        "Price": 0.10,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      },
+      {
+        "SkinId": 51,
+        "CaseId": 3,
+        "Name": "Shred",
+        "WeaponName": "Dual Berettas",
+        "ImageLink": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_elite_sp_elites_winter_raider_light_large.eddc2e91d0081e57588b745589209094a6b3e9b6.png",
+        "Price": 0.09,
+        "Rarity": "Mil-Spec",
+        "DropRate": 0.10
+      }
+    ]
+  }
+]

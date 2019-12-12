@@ -7,8 +7,8 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Skin(
     val skinId: Int,
-    val skinName: String,
-    val price: Long,
+    val name: String,
+    val price: Float,
     val weaponName: String,
     val dropRate: Double,
     val caseId: Int,

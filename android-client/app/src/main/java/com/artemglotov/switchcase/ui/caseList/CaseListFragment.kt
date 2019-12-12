@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
 import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.core.models.Case
 import com.artemglotov.switchcase.ui.caseList.adapters.CaseListAdapter

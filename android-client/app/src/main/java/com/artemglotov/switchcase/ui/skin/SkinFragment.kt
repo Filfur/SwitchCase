@@ -11,13 +11,13 @@ import androidx.navigation.fragment.navArgs
 import com.artemglotov.switchcase.R
 import com.artemglotov.switchcase.ui.UserViewModel
 import com.artemglotov.switchcase.ui.skin.viewModels.SkinViewModel
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.destination_skin.*
 import org.koin.android.viewmodel.ext.android.sharedViewModel
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
 class SkinFragment : Fragment() {
-
 
     private val args: SkinFragmentArgs by navArgs()
 
@@ -39,13 +39,16 @@ class SkinFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val skin = args.skin
+        viewModel.skin.apply {
+            text_skin_name.text = name
 
-        text_skin_name.text = args.skin.skinName
+            text_weapon_name.text = weaponName
 
-        text_weapon_name.text = args.skin.weaponName
+            Glide.with(this@SkinFragment).load(imageLink).into(image_skin)
 
-        button_sell.text = "Get money back: ${skin.price}${"$"}"
+            button_sell.text = getString(R.string.get_money_back, price.toString())
+        }
+
 
         button_save_to_steam.setOnClickListener {
             viewModel.sendToSteam()

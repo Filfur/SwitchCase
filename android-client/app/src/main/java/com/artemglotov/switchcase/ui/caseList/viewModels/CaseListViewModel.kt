@@ -3,7 +3,6 @@ package com.artemglotov.switchcase.ui.caseList.viewModels
 import androidx.lifecycle.*
 import com.artemglotov.switchcase.core.models.Case
 import com.artemglotov.switchcase.networking.NetworkService
-import kotlinx.coroutines.launch
 
 class CaseListViewModel(
     private val networkService: NetworkService
