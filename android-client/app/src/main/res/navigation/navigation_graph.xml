@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/destination_sign_in">
+
+    <fragment
+        android:id="@+id/destination_case_list"
+        android:name="com.artemglotov.switchcase.ui.caseList.CaseListFragment"
+        android:label="CaseListFragment"
+        tools:layout="@layout/destination_case_list">
+        <action
+            android:id="@+id/action_case_details"
+            app:destination="@id/destination_case_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_case_details"
+        android:name="com.artemglotov.switchcase.ui.caseDetails.CaseDetailsFragment"
+        android:label="CaseDetailsFragment"
+        tools:layout="@layout/destination_case_details">
+        <argument
+            android:name="selectedCase"
+            app:argType="com.artemglotov.switchcase.core.models.Case" />
+        <action
+            android:id="@+id/action_skin"
+            app:destination="@id/destination_skin"
+            app:popUpTo="@+id/destination_case_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_skin"
+        android:name="com.artemglotov.switchcase.ui.skin.SkinFragment"
+        android:label="SkinFragment"
+        tools:layout="@layout/destination_skin">
+        <argument
+            android:name="skin"
+            app:argType="com.artemglotov.switchcase.core.models.Skin" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_sign_in"
+        android:name="com.artemglotov.switchcase.ui.login.SignInFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/destination_sign_in">
+        <action
+            android:id="@+id/action_case_list"
+            app:destination="@id/destination_case_list"
+            app:popUpTo="@+id/navigation_graph" />
+        <action
+            android:id="@+id/action_sign_up"
+            app:destination="@id/destination_sign_up"
+            app:popUpTo="@+id/navigation_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_sign_up"
+        android:name="com.artemglotov.switchcase.ui.login.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/destination_sign_up">
+        <action
+            android:id="@+id/action_sign_in"
+            app:destination="@id/destination_sign_in"
+            app:popUpTo="@+id/navigation_graph" />
+        <action
+            android:id="@+id/action_case_list"
+            app:destination="@id/destination_case_list"
+            app:popUpTo="@+id/navigation_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_profile"
+        android:name="com.artemglotov.switchcase.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/destination_profile">
+        <action
+            android:id="@+id/action_sign_in"
+            app:destination="@id/destination_sign_in"
+            app:popUpTo="@+id/destination_case_list"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action android:id="@+id/action_global_profileFragment" app:destination="@id/destination_profile" />
+</navigation>
